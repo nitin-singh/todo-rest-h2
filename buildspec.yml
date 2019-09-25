@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+    commands:
+      - echo Installing
+  pre_build:
+    commands:
+      - echo Pre_Build
+  build:
+    commands:
+      - mvn package
+      - echo Build
+  post_build:
+    commands:
+      - echo Post_Build
+artifacts:
+  files:
+    - target/02-todo-rest-api-h2-0.0.1-SNAPSHOT.jar
