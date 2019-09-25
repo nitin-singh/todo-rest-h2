@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.restfulwebservices.helloworld;
+opackage com.in28minutes.rest.webservices.restfulwebservices.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +10,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World";
+		return "Hello CodePipeline.";
 	}
 
 	@GetMapping(path = "/hello-world-bean")
